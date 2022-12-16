@@ -9,13 +9,6 @@ import { BrowserRouter as Router,Routes,  Route, NavLink } from 'react-router-do
 
 
 function App() {
-  <Router>
-    <Navbar/>
-    <Routes>
-      <Route path='/' element = {<Login/>} />
-      <Route path='/Carrito' element = {<Carrito/>} />
-    </Routes>
-  </Router>
 
   const Cards = [
     {
@@ -91,9 +84,13 @@ function App() {
                   />)
                   )}
         </div>
-      <header className="App-header bg-white">
-      </header>
 
+        <Router>
+                    <Routes>
+                          <Route path='/' element = {<Login/>} />
+                          <Route path='/Carrito' element = {<Carrito/>} />
+                    </Routes>
+        </Router>
       <div>
         <Footer></Footer>
       </div>

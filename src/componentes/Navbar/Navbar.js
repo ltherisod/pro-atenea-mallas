@@ -8,7 +8,7 @@ const Navbar = (props) => {
               
               <div className='cajaLogo'>
 
-              <a className="navbar-brand logo" href="">LOGO</a>
+              <a className="navbar-brand logo" href=""><img src='../img/logo.png' style={{width: "150px"}}/></a>
 
                      <div className='cajaTexto'>
                        <h1 className='texto'>Atenea Mallas</h1>

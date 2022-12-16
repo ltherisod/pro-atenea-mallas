@@ -8,7 +8,7 @@ const Footer = (props) => {
 
         <div>
               <div>
-                   <a href='https://www.instagram.com/ateneamallas/'><img href='https://cdn.pixabay.com/photo/2016/11/18/11/16/instagram-1834010_960_720.png'></img>instagram</a>
+                   <a href='https://www.instagram.com/ateneamallas/'><img href='../img/instagram.webp'/>instagram</a>
               </div>   
 
               <div>
