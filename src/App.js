@@ -3,7 +3,7 @@ import Navbar from './componentes/Navbar/Navbar';
 import Card from './componentes/card/Card';
 import Footer from './componentes/footer/Footer';
 import Login from './componentes/Login/Login.jsx';
-import Errror404 from './componentes/404/Errror404';
+import Error404 from './componentes/404/Error404';
 import Carrito from './componentes/Carrito/Carrito';
 import { BrowserRouter as Router,Routes,  Route, NavLink } from 'react-router-dom'
 
@@ -89,6 +89,8 @@ function App() {
                     <Routes>
                           <Route path='/' element = {<Login/>} />
                           <Route path='/Carrito' element = {<Carrito/>} />
+                          <Route path='/Error404' element = {<Error404/>} />
+
                     </Routes>
         </Router>
       <div>
