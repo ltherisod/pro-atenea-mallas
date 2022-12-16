@@ -13,21 +13,21 @@ function App() {
   const Cards = [
     {
       img : "https://i.pinimg.com/564x/1d/44/2c/1d442c925ea06152466242d82f7e7803.jpg",
-      titulo : "Bella",
+      titulo : "Kassie",
       precio : "$ 2.500",
       select : "Talles",
       btnSubmit : "Comprar"
     },
     {
       img : "https://i.pinimg.com/564x/25/1a/a9/251aa9dce5c5dc3c0ebc85c5e6107955.jpg",
-      titulo : "Bella",
+      titulo : "Stefanie",
       precio : "$ 2.500",
       select : "Talles",
       btnSubmit : "Comprar"
     },
     {
       img : "https://i.pinimg.com/564x/4d/99/df/4d99dfab4817c863137f066303ef4fa8.jpg",
-      titulo : "Bella",
+      titulo : "Josef",
       precio : "$ 2.500",
       select : "Talles",
       btnSubmit : "Comprar"
@@ -41,28 +41,28 @@ function App() {
     },
     {
       img : "https://i.pinimg.com/564x/05/2e/54/052e54c24783cd374f55d609159114e4.jpg",
-      titulo : "Bella",
+      titulo : "Rosie",
       precio : "$ 2.500",
       select : "Talles",
       btnSubmit : "Comprar"
     },
     {
       img : "https://i.pinimg.com/736x/1a/64/ee/1a64eed4776402bf12bbcc356f252c7c.jpg",
-      titulo : "Bella",
+      titulo : "Steff",
       precio : "$ 2.500",
       select : "Talles",
       btnSubmit : "Comprar"
     },
     {
       img : "https://i.pinimg.com/564x/3f/ee/d1/3feed1c22d0eb302cceca481b999f617.jpg",
-      titulo : "Bella",
+      titulo : "Lorem",
       precio : "$ 2.500",
       select : "Talles",
       btnSubmit : "Comprar"
     },
     {
       img : "https://i.pinimg.com/564x/1f/e8/5b/1fe85bdfee7e5b93af2db1c049da7b12.jpg",
-      titulo : "Bella",
+      titulo : "Cloe",
       precio : "$ 2.500",
       select : "Talles",
       btnSubmit : "Comprar"
@@ -87,9 +87,9 @@ function App() {
 
         <Router>
                     <Routes>
-                          <Route path='/' element = {<Login/>} />
+                          <Route path='/login' element = {<Login/>} />
                           <Route path='/Carrito' element = {<Carrito/>} />
-                          <Route path='/Error404' element = {<Error404/>} />
+                          <Route path='*' element = {<Error404/>} />
 
                     </Routes>
         </Router>

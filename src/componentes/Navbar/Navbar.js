@@ -36,7 +36,7 @@ const Navbar = (props) => {
                    </ul>
                    <form className="d-flex">
 
-                      <button id='login' type='submit' style={{width: "80px", border: "2rem", background: "pink"}}> <a href="" style={{color: "#373737"}}>Login</a></button>
+                      <button type='submit' style={{width: "80px", border: "2rem", background: "pink"}}> <a href="" style={{color: "#373737"}}>Login</a></button>
 
                        <div>
                              <a href=""><img className='imgCarrito' src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></a>
