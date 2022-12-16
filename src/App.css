@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.cajaLogo{
+  width: 90%;
+  height: 90%;
+  display: flex;
+}
+
+.logo{
+  width: 100px;
+  height: 50px;
+}
+
+.cajaTexto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.texto{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 50px;
+  color: #37373788;
+}
+
+@media screen and (max-width: 768px ) {
+  .texto{
+    opacity: 0%;
+  }
+}
+.botonBurger{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+
+.imgCarrito{
+  padding: 5px;
+ 
+}
+@media screen and (max-width: 768px) {
+  .imgCarrito{
+    opacity: 0%;
+  }
+}
+
+.container-fluid{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btnSelect{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.btnSubmit{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 15px; 
+  border-radius: 8px;
+}
