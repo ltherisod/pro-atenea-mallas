@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Navbar = (props) => {
+const Navbar = () => {
 
   return (
     <div>
@@ -20,7 +20,7 @@ const Navbar = (props) => {
                    <span className="navbar-toggler-icon"></span>.
 
                    <div>
-                       <a href=""><img src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></a>
+                       <NavLink to="/"><img src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></NavLink>
                     </div>
                  </button>
               </div>
@@ -40,10 +40,10 @@ const Navbar = (props) => {
                     
                     <form className="d-flex">
 
-                      <button type='submit' style={{width: "80px", border: "2rem", background: "pink"}}> <a href="" style={{color: "#373737"}}>Login</a></button>
+                      <button type='submit' style={{width: "80px", border: "2rem", background: "pink"}}> <NavLink to="/Login" style={{color: "#373737"}}>Login</NavLink></button>
 
                        <div>
-                             <a href=""><img className='imgCarrito' src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></a>
+                             <NavLink to="/Carrito"><img className='imgCarrito' src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></NavLink>
                        </div>
                     </form>
     
