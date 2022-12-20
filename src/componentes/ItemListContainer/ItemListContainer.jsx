@@ -4,6 +4,15 @@ import { getProducts } from '../../mock/Data';
 
 
 const ItemListContainer = () => {
+
+  const cards = [
+    {
+      id: 1,
+      nombre: "kassie"
+    },
+  ]
+
+
   const [listaProductos, setListaProductos] = useState([]);
  
 
@@ -13,9 +22,19 @@ const ItemListContainer = () => {
       .catch((error) => console.log(error))
   }, []);
 
+
   return (
     <div>
        <ItemList listaProductos={listaProductos} />
+
+       <>
+            {cards.map(({id,nombre})=>
+
+            <cards id= {id} nombre = {nombre}/>
+            
+            )}
+
+       </>
     </div>
   );
 };

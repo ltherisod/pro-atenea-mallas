@@ -36,6 +36,13 @@ const Navbar = (props) => {
                        <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
                       </li>
                    </ul>
+
+                  <ul>
+                    <li>
+                      <NavLink to="/detail/:id">login</NavLink>
+                    </li>
+                  </ul>
+                    
                     <form className="d-flex">
 
                       <button type='submit' style={{width: "80px", border: "2rem", background: "pink"}}> <a href="" style={{color: "#373737"}}>Login</a></button>

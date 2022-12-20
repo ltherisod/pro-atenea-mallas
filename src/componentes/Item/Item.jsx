@@ -1,8 +1,14 @@
 import React from 'react'
 
 const Item = () => {
+
+  const {nombre, id}=  props
   return (
-    <h1>Item</h1>
+    <div>Item
+      <h1>{nombre}</h1>
+      <h3>{id}</h3>
+      
+    </div>
   )
 }
 
