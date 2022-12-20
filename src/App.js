@@ -8,33 +8,27 @@ import Carrito from './componentes/Carrito/Carrito';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import { BrowserRouter as Router,Routes,  Route, BrowserRouter, } from 'react-router-dom'
 import ItemDetailContainer from './componentes/ItemDetailCiontainer/ItemDetailContainer';
+;
 
 
 function App() {
-
- <BrowserRouter>
   return (
-    <div className="App">
+    <Router className="App">
         <Navbar/>
-        <Router>
-                    <Routes>
-                          <Route path='/' element={<ItemListContainer/>}/>
-                          <Route path='/Login' element = {<Login/>} />
-                          <Route path='/Carrito' element = {<Carrito/>} />
-                          <Route path='*' element = {<Error404/>} />
-                          <Route path='/Item/detail/:id' element = {<ItemDetailContainer/>} />
+        <Routes>
+                <Route path='/' element={<ItemListContainer/>}/>
+                <Route path='/Login' element = {<Login/>} />
+                <Route path='/Carrito' element = {<Carrito/>} />
+                <Route path='*' element = {<Error404/>} />
+                <Route path='/Item/detail/:id' element = {<ItemDetailContainer/>} />
 
 
-                    </Routes>
-        </Router>
+         </Routes>
       <div>
         <Footer></Footer>
       </div>
-    </div>
-    
+    </Router>
   );
- </BrowserRouter>
-
 }
  
 export default App;
