@@ -23,7 +23,7 @@ function App() {
                           <Route path='/login' element = {<Login/>} />
                           <Route path='/Carrito' element = {<Carrito/>} />
                           <Route path='*' element = {<Error404/>} />
-                          <Route path='/' element = {<ItemDetailContainer/>} />
+                          <Route path='/item/detail/:id' element = {<ItemDetailContainer/>} />
 
 
                     </Routes>

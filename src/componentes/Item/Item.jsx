@@ -1,14 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Item = () => {
+const Item = (props) => {
 
   const {nombre, id}=  props
   return (
-    <div>Item
-      <h1>{nombre}</h1>
-      <h3>{id}</h3>
-      
-    </div>
+    <link>
+            <div>
+                    <h3>{id}</h3>
+                    <h1>{nombre}</h1>
+
+                    <Link rel="stylesheet" to = {`/Item/detail/${id}`} >"detalle"</Link>
+                  
+
+            </div>
+    </link>
   )
 }
 

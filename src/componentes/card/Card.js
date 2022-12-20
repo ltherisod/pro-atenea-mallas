@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Card = ({producto}) => {
-  const {titulo,precio, btnSubmit, select, img} = producto;
+  const {titulo,precio, btnSubmit, select, img,id} = producto;
   
   return (
     <div>
@@ -17,7 +18,7 @@ const Card = ({producto}) => {
                        <option value="">S</option>
                        <option value="">X</option>
                   </select>
-                  <button className='btnSubmit' type='submit'>{btnSubmit}</button>
+                  <Link  to = {`/Item/detail/${id}`} className='btnSubmit' type='submit'>{btnSubmit}</Link>
                 </div>  
         </div>
     </div>

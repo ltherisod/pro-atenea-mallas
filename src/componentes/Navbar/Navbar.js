@@ -37,11 +37,6 @@ const Navbar = (props) => {
                       </li>
                    </ul>
 
-                  <ul>
-                    <li>
-                      <NavLink to="/detail/:id">login</NavLink>
-                    </li>
-                  </ul>
                     
                     <form className="d-flex">
 
