@@ -1,6 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = (props) => {
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -8,7 +10,7 @@ const Navbar = (props) => {
               
               <div className='cajaLogo'>
 
-              <a className="navbar-brand logo" href=""><img src='../img/logo.png' style={{width: "150px"}}/></a>
+              <a className="navbar-brand logo" href="../"><img src='../img/logo.png' style={{width: "150px"}}/></a>
 
                      <div className='cajaTexto'>
                        <h1 className='texto'>Atenea Mallas</h1>
@@ -34,14 +36,14 @@ const Navbar = (props) => {
                        <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
                       </li>
                    </ul>
-                   <form className="d-flex">
+                    <form className="d-flex">
 
                       <button type='submit' style={{width: "80px", border: "2rem", background: "pink"}}> <a href="" style={{color: "#373737"}}>Login</a></button>
 
                        <div>
                              <a href=""><img className='imgCarrito' src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></a>
                        </div>
-                   </form>
+                    </form>
     
                  </div>
             </div>
