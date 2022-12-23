@@ -62,6 +62,22 @@ const Cards = [
       select : "Talles",
       btnSubmit : "Comprar",
       id: "8"
+    },
+    {
+      img : "https://i.pinimg.com/564x/06/5e/8f/065e8f756095b3f4330ff7282c951233.jpg",
+      titulo : "Juliet",
+      precio : "$ 2.500",
+      select : "Talles",
+      btnSubmit : "Comprar",
+      id: "9"
+    },
+    {
+      img : "https://i.pinimg.com/564x/94/2b/7d/942b7da7d1f1eaaa3111b1520e69d263.jpg",
+      titulo : "Roma",
+      precio : "$ 2.500",
+      select : "Talles",
+      btnSubmit : "Comprar",
+      id: "10"
     }
   ];
 
