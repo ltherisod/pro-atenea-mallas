@@ -1,8 +1,7 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,7 +19,7 @@ const Navbar = () => {
                    <span className="navbar-toggler-icon"></span>.
 
                    <div>
-                       <NavLink to="/"><img src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></NavLink>
+                       <NavLink to="/Carrito"><img src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></NavLink>
                     </div>
                  </button>
               </div>

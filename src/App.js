@@ -3,8 +3,8 @@ import './App.css';
 import Navbar from './componentes/Navbar/Navbar';
 import Footer from './componentes/footer/Footer';
 import Login from './componentes/Login/Login.jsx';
+import Carrito from './componentes/carrito/Carrito';
 import Error404 from './componentes/404/Error404';
-import Carrito from './componentes/Carrito/Carrito';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import { BrowserRouter as Router,Routes,  Route, BrowserRouter, } from 'react-router-dom'
 import ItemDetailContainer from './componentes/ItemDetailCiontainer/ItemDetailContainer';
