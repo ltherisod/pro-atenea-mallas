@@ -1,6 +1,7 @@
 import React,{createContext, useState} from 'react'
 
 
+
 export const CarritoContext = createContext('');
 
 
@@ -8,7 +9,7 @@ const CarritoContextProvider = ({children}) => {
 
       const [carrito , setCarrito] = useState([]);
 
-      const guardarCarrito = () => {
+      const guardarCarrito = (getProducts) => {
         setCarrito([...carrito])
       }
 

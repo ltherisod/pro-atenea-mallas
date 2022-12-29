@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
-import { useContext } from 'react';
-import { CarritoContext } from '../../context/carritoContext';
+import { getProducts } from '../../mock/Data';
 
 const ItemListContainer = () => {
+
+  
   const cards = [
     {
       id: 1,
@@ -21,14 +22,10 @@ const ItemListContainer = () => {
       .catch((error) => console.log(error))
   }, []);
 
-  const {getProducts} = useContext (CarritoContext)
-
   return (
+
     <div>
-      {getProducts.map((item, index) =>(
-        <item item = {item} key = {index}/>
-      )
-      )}
+
        <ItemList listaProductos={listaProductos} />
 
        <>
@@ -40,7 +37,7 @@ const ItemListContainer = () => {
 
        </>
     </div>
-  );
+ );
 };
 
 export default ItemListContainer;

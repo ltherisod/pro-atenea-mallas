@@ -1,7 +1,10 @@
 import React, {useContext} from 'react'
 import { NavLink } from 'react-router-dom'
+import { CarritoContext } from '../../context/carritoContext'
 
 const Navbar = () => {
+
+  const {carrito} = useContext(CarritoContext)
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
