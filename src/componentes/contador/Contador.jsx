@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useState } from 'react';
 import { CarritoContext } from '../context/CarritoContext';
 
-const contador = (props) => {
+const Contador = (props) => {
 
     const { initialValue , item } = props;
     const {guardarCarrito} = useContext(CarritoContext)
@@ -26,7 +26,7 @@ const contador = (props) => {
 
     const producto = {
       ...item,
-      cantidad:count
+      cantidad:contador
     }
 
 
@@ -42,4 +42,4 @@ const contador = (props) => {
   )
 }
 
-export default ItemCount
+export default Contador

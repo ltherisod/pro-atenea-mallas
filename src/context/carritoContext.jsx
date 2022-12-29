@@ -5,19 +5,16 @@ export const CarritoContext = createContext('');
 
 
 const CarritoContextProvider = ({children}) => {
-    const productos = [
-       
-      ]
 
       const [carrito , setCarrito] = useState([]);
 
-      const guardarCarrito = (producto) => {
-        setCarrito([...carrito,producto])
+      const guardarCarrito = () => {
+        setCarrito([...carrito])
       }
 
 
   return (
-    <CarritoContext.Provider value={{productos,carrito,guardarCarrito}}>
+    <CarritoContext.Provider value={{carrito,guardarCarrito}}>
        {children}
     </CarritoContext.Provider>
   )
