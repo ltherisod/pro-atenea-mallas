@@ -8,7 +8,8 @@ const ItemListContainer = () => {
   const cards = [
     {
       id: 1,
-      nombre: "kassie"
+      nombre: "kassie",
+      precio: "$2.500"
     },
     {
       id: 2,
@@ -67,7 +68,6 @@ const ItemListContainer = () => {
   }, []);
 
   return (
-
     <div>
 
        <ItemList listaProductos={listaProductos} />

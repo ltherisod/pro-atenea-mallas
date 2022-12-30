@@ -1,8 +1,8 @@
-import React from 'react'
+import { useEffect } from "react"
 
-const ItemDetail = ({Datos}) => {
+const ItemDetail = ({Datos} ) => {
   return (
-    <h1>{Datos}</h1>
+    <h1>{Datos} </h1>
   )
 }
 
