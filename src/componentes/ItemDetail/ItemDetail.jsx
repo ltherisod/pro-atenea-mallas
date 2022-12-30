@@ -1,8 +1,9 @@
 import { useEffect } from "react"
+import ItemDetailContainer from "../ItemDetailCiontainer/ItemDetailContainer"
 
 const ItemDetail = ({Datos} ) => {
   return (
-    <h1>{Datos} </h1>
+    <h1>{Datos.precio} </h1>
   )
 }
 

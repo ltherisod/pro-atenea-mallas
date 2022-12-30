@@ -68,9 +68,9 @@ const objet = [
 
 const ItemDetailContainer = () => {
 
-  const [datos, guardaDatos] = useState();
-const {id} = useParams()
-  console.log("id: ",id)
+  const [Datos, guardaDatos] = useState();
+  const {id} = useParams()
+  //console.log("id: ",id)
   useEffect(() =>{
 
     const getData = new Promise(resolve =>{
@@ -86,7 +86,7 @@ const {id} = useParams()
 
    return (
       <>
-          {datos&&<ItemDetail datos = {datos}/>}
+          {Datos&&<ItemDetail Datos = {Datos}/>}
       </>
       )
 })  
