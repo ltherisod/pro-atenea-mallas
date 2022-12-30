@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react' 
 import ItemDetail from '../ItemDetail/ItemDetail';
-import { getProducts } from '../../mock/Data';
 import { useParams } from 'react-router-dom';
 
 const objet = [
@@ -69,24 +68,30 @@ const objet = [
 
 const ItemDetailContainer = () => {
 
-  const [datos, guardaDatos] = useState({});
-
-  const {id} = useParams();
-
+  const [datos, guardaDatos] = useState();
+const {id} = useParams()
+  console.log("id: ",id)
   useEffect(() =>{
+
     const getData = new Promise(resolve =>{
       setTimeout(() =>{
-        resolve (objet.find(objet=> objet.id=== id))
-      }, 1000)
+        resolve(objet)
+      }, 2000)
     })
 
-    getData.then(res => guardaDatos(res))
-  }, [])
+    getData.then(res => {
+      console.log("productos: ",res)
+      guardaDatos(res.find(p=>p.id === id))
+        }, [])
 
-
-  return (
-    <ItemDetail datos = {datos} />
+   return (
+      <>
+          {datos&&<ItemDetail datos = {datos}/>}
+      </>
       )
+})  
 }
+
+
 
 export default ItemDetailContainer
