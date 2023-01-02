@@ -1,5 +1,6 @@
 import React from 'react';
-import Item from '../card/Card';
+import Item from '../Item/Item';
+
 
 const ItemList = ({ listaProductos }) => {
   return (
