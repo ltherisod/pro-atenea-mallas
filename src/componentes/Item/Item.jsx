@@ -12,6 +12,8 @@ const Item = ({producto}) => {
             <div className="card-body">
               <h5 className="card-title">{titulo}</h5>
               <p className="card-text">{precio}</p>
+              <button className='SignosMasMenos'>-</button>
+              <button className='SignosMasMenos'>+</button>
               <select className='btnSelect' style={{margin: "15px"}} name="talles" id="">{select}
                    <option value="">Talles</option>
                    <option value="">M</option>
