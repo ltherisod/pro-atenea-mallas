@@ -1,23 +1,20 @@
-/*import React, { useContext } from 'react'
-import { useState } from 'react';
-import { CarritoContext } from '../context/CarritoContext';
+import {useState} from 'react'
 
-const Contador = ({agregar}) => {
+const Contador = () => {
 
-   const {carrito, agregarCarrito} = useState(1)
+  const [contador, setContador]= useState(0)
 
-   const sumar = () =>agregarCarrito(Contador + 1)
+  const sumar = () => setContador(contador + 1)
 
-   const restar = () => agregarCarrito (Contador - 1)
+  const restar = () => setContador(contador- 1)
 
+  const select = () => setContador(contador+ select)
 
   return (
-   <div>
-    <button onClick={() =>{restar()}}>-</button>
-    <button onClick={() =>{sumar ()}}></button>
-    <button onClick={() =>{agregar(Contador)}}>agregar al carrito</button>
-   </div>
+   sumar,
+   restar,
+   select
   )
 }
 
-export default Contador*/
+export default Contador

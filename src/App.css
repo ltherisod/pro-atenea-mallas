@@ -168,3 +168,13 @@
 
 }
 
+.botones{
+  width: 1.5rem;
+  border-radius: 7px;
+  margin: 4px;
+}
+
+.Select{
+  width: 4.7rem;
+}
+

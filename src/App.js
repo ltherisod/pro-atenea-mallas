@@ -9,6 +9,7 @@ import CarritoContextProvider from './context/carritoContext';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import { BrowserRouter as Router,Routes,  Route, BrowserRouter, } from 'react-router-dom'
 import ItemDetailContainer from './componentes/ItemDetailCiontainer/ItemDetailContainer';
+import Contador from './componentes/contador/Contador';
 
 ;
 
@@ -18,6 +19,7 @@ function App() {
     <CarritoContextProvider>
         <Router className="App">
             <Navbar/>
+            <Contador/>
             <Routes>
                     <Route path='/' element={<ItemListContainer/>}/>
                     <Route path='/Login' element = {<Login/>} />

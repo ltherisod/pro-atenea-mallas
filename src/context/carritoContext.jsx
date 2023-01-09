@@ -1,5 +1,5 @@
 import React,{createContext, useState} from 'react'
-import Contador from '../componentes/contador/Contador';
+//import Contador from '../componentes/contador/Contador';
 import Item from '../componentes/Item/Item';
 import { getProducts } from '../mock/Data';
 
@@ -8,7 +8,7 @@ export const CarritoContext = createContext();
 const stock = (id) => Item.find(tem => Item.id === id)
 
 const guardarCarrito = (getProducts, Contador) =>{
-  console.log(getProducts, contador);
+  console.log(getProducts);
 }
 
 
