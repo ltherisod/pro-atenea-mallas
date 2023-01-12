@@ -7,9 +7,7 @@ export const CarritoContext = createContext();
 
 const stock = (id) => Item.find(tem => Item.id === id)
 
-const guardarCarrito = (getProducts, Contador) =>{
-  console.log(getProducts);
-}
+const guardarCarrito = (getProducts, Contador) =>{}
 
 
 

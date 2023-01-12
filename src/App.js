@@ -1,7 +1,6 @@
 
 import './App.css';
 import Navbar from './componentes/Navbar/Navbar';
-import Footer from './componentes/footer/Footer';
 import Login from './componentes/Login/Login.jsx';
 import Carrito from './componentes/carrito/Carrito';
 import Error404 from './componentes/404/Error404';
@@ -29,9 +28,6 @@ function App() {
     
     
              </Routes>
-          <div>
-            <Footer></Footer>
-          </div>
         </Router>
     </CarritoContextProvider >
       );
