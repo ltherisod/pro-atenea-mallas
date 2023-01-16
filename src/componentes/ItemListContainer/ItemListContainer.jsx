@@ -3,6 +3,7 @@ import ItemList from '../ItemList/ItemList';
 import { getProducts } from '../../mock/Data';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import { useContext } from 'react';
 
 const ItemListContainer = () => {
 

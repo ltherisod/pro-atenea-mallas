@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react' 
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import Contador from '../contador/Contador';
+import { useContext } from 'react';
 
 const objet = [
   {
@@ -67,6 +69,7 @@ const objet = [
 
 
 const ItemDetailContainer = () => {
+  
 
   const [Datos, guardaDatos] = useState();
   const { id } = useParams()
@@ -80,7 +83,7 @@ const ItemDetailContainer = () => {
     })
 
     getData.then(res => {
-      console.log("productos: ", res)
+      //console.log("productos: ", res)
       guardaDatos(res.find(p => p.id === id))
     }, [])
 

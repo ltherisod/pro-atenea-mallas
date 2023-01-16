@@ -1,10 +1,12 @@
 import React, {useContext} from 'react'
 import { NavLink } from 'react-router-dom'
-import { CarritoContext } from '../../context/carritoContext'
+import { CarritoContext } from '../../context/CarritoContext'
+import Carrito from '../carrito/Carrito'
 
-const Navbar = () => {
+const Navbar = (props) => {
 
-  const {carrito} = useContext(CarritoContext)
+const carrito = useContext(CarritoContext)
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -12,7 +14,7 @@ const Navbar = () => {
               
               <div className='cajaLogo'>
 
-              <a className="navbar-brand logo" href="../"><img src='../img/logo.png' style={{width: "150px"}}/></a>
+              <a className="navbar-brand logo" href=""><img src='../img/logo.png' style={{width: "150px"}}/></a>
 
                      <div className='cajaTexto'>
                        <h1 className='texto'>Atenea Mallas</h1>
@@ -26,18 +28,7 @@ const Navbar = () => {
                     </div>
                  </button>
               </div>
-                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                     <li className="nav-item">
-                       <a className="nav-link active" aria-current="page" href="#"></a>
-                     </li>
-                     <li className="nav-item">
-                       <a className="nav-link" href="#"></a>
-                     </li>
-                     <li className="nav-item">
-                       <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                      </li>
-                   </ul>
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
                     
                     <form className="d-flex">
