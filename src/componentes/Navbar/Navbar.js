@@ -1,11 +1,9 @@
 import React, {useContext} from 'react'
 import { NavLink } from 'react-router-dom'
-import { CarritoContext } from '../../context/CarritoContext'
-import Carrito from '../carrito/Carrito'
+
 
 const Navbar = (props) => {
 
-const carrito = useContext(CarritoContext)
 
   return (
     <div>

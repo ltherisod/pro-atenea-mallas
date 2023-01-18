@@ -6,13 +6,12 @@ import Error404 from './componentes/404/Error404';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import { BrowserRouter as Router,Routes,  Route, BrowserRouter, } from 'react-router-dom'
 import ItemDetailContainer from './componentes/ItemDetailCiontainer/ItemDetailContainer';
-import { CarritoContext } from './context/CarritoContext';
-
+import CarritoProvider from './context/CarritoContext';
 
 function App() {
   return (
 
-        <CarritoContext.Provider>
+        <CarritoProvider>
                   <BrowserRouter className="App">
                       <Navbar/>
                       <Routes>
@@ -25,7 +24,7 @@ function App() {
 
                        </Routes>
                   </BrowserRouter>
-        </CarritoContext.Provider>
+        </CarritoProvider>
 
       );
     

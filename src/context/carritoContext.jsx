@@ -1,28 +1,26 @@
-import React,{createContext, useState} from 'react'
+import React,  { createContext, useState  } from 'react'
+import Contador from '../componentes/contador/Contador' 
 
-export const CarritoContext = createContext();
+export const CarritoContext = createContext('')
 
-const CarritoContextProvider = ({children}) => {
+const CarritoProvider = ({children}) => {
 
-      const [carrito , setCarrito] = useState([]);
+  const [carrito, setCarrito] = useState([])
 
-    const {estaEnElCarrito} = (id) => carrito.find( (Item) => Item.id === id);
+ // const enElCarro = (id) => carrito.find(Item => Item.id === id)
 
-    const agregado = (producto, contador) => {
-        if(estaEnElCarrito(producto.id)) {
-            setCarrito(carrito.map(producto =>{
-                return producto.id === producto.id ? {...producto, contador:producto.contador + contador} : producto
-            }))
-        } else{
-            setCarrito([...carrito, {producto, contador}]);
-        }
-    }
+ const agregado = (Contador, Datos) =>{
+  console.log(Contador, Datos);
+ }
+
+
+
 
   return (
-    <CarritoContext.Provider value={{carrito, setCarrito, agregado, estaEnElCarrito }}>
-       {children}
+    <CarritoContext.Provider value = {{carrito, setCarrito, agregado}}>
+      {children}
     </CarritoContext.Provider>
-  )
+  ) 
 }
 
-export default CarritoContextProvider
+export default CarritoProvider 

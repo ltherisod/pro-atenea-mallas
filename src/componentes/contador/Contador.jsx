@@ -1,13 +1,12 @@
-import React from 'react'
-import {useState} from 'react'
+ import {useState} from 'react'
+ 
+const Contador = ({agregadoAlCarrito}) => {
 
-const Contador = (agregarAlCarrito) => {
 
   const [contador, setContador]= useState(1);
   const sumar = () =>setContador( contador + 1)
   const restar = () => setContador( contador - 1)
   const select = () => setContador(contador === select)
-  //const agregar = ()
 
   return (
    <div>
@@ -15,7 +14,12 @@ const Contador = (agregarAlCarrito) => {
       <h1>{contador}</h1>
       <button className='botones' onClick = {() => restar ()}>-</button>
 
-      <button onClick={() => agregarAlCarrito(contador)}> agregar </button>
+      <button onClick={() =>{
+
+         agregadoAlCarrito (Contador)
+
+      } }> agregar </button>
+
       <select className='Select' onClick={() => select()} name="" id="">
              <option value="">Talles</option>
              <option value="">M</option>
