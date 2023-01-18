@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Contador from '../contador/Contador';
 
 const Item = ({producto}) => {
 
-  const {titulo,precio, btnSubmit, select, img,id} = producto;
+  const {titulo,precio, btnSubmit, img,id} = producto;
 
-  const {sumar, restar} = Contador()
+  //const {sumar, restar} = Contador()
 
 
   return (

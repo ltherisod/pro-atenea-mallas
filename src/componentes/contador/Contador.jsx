@@ -6,7 +6,7 @@ const Contador = ({agregadoAlCarrito}) => {
   const [contador, setContador]= useState(1);
   const sumar = () =>setContador( contador + 1)
   const restar = () => setContador( contador - 1)
-  const select = () => setContador(contador === select)
+  //const select = () => setContador(contador === select)
 
   return (
    <div>
@@ -16,18 +16,18 @@ const Contador = ({agregadoAlCarrito}) => {
 
       <button onClick={() =>{
 
-         agregadoAlCarrito (Contador)
+         agregadoAlCarrito (contador)
 
       } }> agregar </button>
 
-      <select className='Select' onClick={() => select()} name="" id="">
+      {/*<select className='Select' onClick={() => select()} name="" id="">
              <option value="">Talles</option>
              <option value="">M</option>
              <option value="">S</option>
              <option value="">L</option>
              <option value="">XL</option>
 
-      </select>
+    </select>*/}
    </div>
   )
 } 

@@ -1,6 +1,13 @@
 import React from 'react'
+import { useContext } from 'react';
+import { CarritoContext } from '../../context/CarritoContext';
 
 const Carrito = () => {
+
+   const {Carrito} = useContext(CarritoContext)
+
+   console.log(Carrito);
+
   return (
 
    
