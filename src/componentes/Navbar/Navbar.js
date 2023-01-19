@@ -1,8 +1,11 @@
 import React, {useContext} from 'react'
 import { NavLink } from 'react-router-dom'
+import { CarritoContext } from '../../context/CarritoContext'
 
 
-const Navbar = (props) => {
+const Navbar = () => {
+
+  const { carrito } = useContext(CarritoContext);
 
 
   return (
@@ -22,7 +25,7 @@ const Navbar = (props) => {
                    <span className="navbar-toggler-icon"></span>.
 
                    <div>
-                       <NavLink to="/Carrito"><img src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></NavLink>
+                       <NavLink to="/Carrito"><img src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} />{carrito.length}</NavLink>
                     </div>
                  </button>
               </div>

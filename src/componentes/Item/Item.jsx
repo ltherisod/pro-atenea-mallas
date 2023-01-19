@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Item = ({producto}) => {
 
   const {titulo,precio, btnSubmit, img,id} = producto;
-
-  //const {sumar, restar} = Contador()
-
 
   return (
     <div>

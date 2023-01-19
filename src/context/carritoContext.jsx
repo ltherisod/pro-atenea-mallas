@@ -10,7 +10,7 @@ const CarritoProvider = ({children}) => {
  const enElCarro = (id) => carrito.find(Item => Item.id === id)
 
  const agregado = (contador, Datos) =>{
-  console.log(contador, Datos);
+  //console.log(contador, Datos);
   if(enElCarro (Item.id)){
     setCarrito(carrito.map(product => {
       return product.id === Item.id ? {...product, contador :(Item.contador + contador)} : Item
@@ -20,7 +20,7 @@ const CarritoProvider = ({children}) => {
   }
  }
 
- const vaviarCarro = () =>{
+ const vaciarCarro = () =>{
   setCarrito([])
  }
 
@@ -29,13 +29,16 @@ const CarritoProvider = ({children}) => {
   setCarrito(nuevoItem)
  }
 
- const totalprecio = () =>{
+ const totalPrecio = () =>{
   return carrito.reduce((prev, act) => prev + act.contador * act.precio, 0)
  }
 
+  const {guardarCarrito} = (Item) =>{
+    setCarrito([...carrito, Item])
+  }
 
   return (
-    <CarritoContext.Provider value = {{carrito, setCarrito, agregado, vaviarCarro, borrarItem, totalprecio}}>
+    <CarritoContext.Provider value = {{carrito, setCarrito, agregado, vaciarCarro, borrarItem, totalPrecio, guardarCarrito}}>
       {children}
     </CarritoContext.Provider>
   ) 
