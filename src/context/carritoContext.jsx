@@ -10,13 +10,12 @@ const CarritoProvider = ({children}) => {
  const enElCarro = (id) => carrito.find(Item => Item.id === id)
 
  const agregado = (contador, Datos) =>{
-  //console.log(contador, Datos);
-  if(enElCarro (Item.id)){
+  if(enElCarro (Datos.id)){
     setCarrito(carrito.map(product => {
-      return product.id === Item.id ? {...product, contador :(Item.contador + contador)} : Item
+      return product.id === Datos.id ? {...product, contador :(product.contador + contador)} : product
     }))
   }else{
-    setCarrito([...carrito, {Item, contador}])
+    setCarrito([...carrito, {Datos, contador}])
   }
  }
 

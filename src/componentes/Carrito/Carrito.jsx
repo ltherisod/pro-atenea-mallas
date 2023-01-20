@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react';
 import { CarritoContext } from '../../context/CarritoContext';
 
+
 const Carrito = () => {
    const {carrito} = useContext(CarritoContext);
    

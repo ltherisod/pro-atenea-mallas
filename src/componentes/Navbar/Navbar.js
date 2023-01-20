@@ -25,7 +25,7 @@ const Navbar = () => {
                    <span className="navbar-toggler-icon"></span>.
 
                    <div>
-                       <NavLink to="/Carrito"><img src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} />{carrito.length}</NavLink>
+                       <NavLink to="/Carrito">{carrito.length}<img src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} />{carrito.length}</NavLink>
                     </div>
                  </button>
               </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
                       <button type='submit' style={{width: "80px", border: "2rem", background: "pink"}}> <NavLink to="/Login" style={{color: "#373737"}}>Login</NavLink></button>
 
                        <div>
-                             <NavLink to="/Carrito"><img className='imgCarrito' src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></NavLink>
+                             <NavLink to="/Carrito">{carrito.length}<img className='imgCarrito' src="https://e7.pngegg.com/pngimages/603/776/png-clipart-shopping-cart-shopping-cart.png" alt="" style={{width: "40px"}} /></NavLink>
                        </div>
                     </form>
     
