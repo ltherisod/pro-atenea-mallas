@@ -12,7 +12,7 @@ const Item = ({producto}) => {
                  <img src={img} className="card-img-top" alt="..."/>
                  <div className="card-body">
                    <h5 className="card-title">{titulo}</h5>
-                   <p className="card-text">{precio}</p>
+                   <p className="card-text">$ {precio}</p>
                    <Link  to = {`/Item/detail/${id}`} className='btnSubmit' type='submit'>{btnSubmit}</Link>
                  </div>  
          </div>

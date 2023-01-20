@@ -19,15 +19,6 @@ const Contador = ({agregadoAlCarrito}) => {
          agregadoAlCarrito (contador)
 
       } }> agregar </button>
-
-      {/*<select className='Select' onClick={() => select()} name="" id="">
-             <option value="">Talles</option>
-             <option value="">M</option>
-             <option value="">S</option>
-             <option value="">L</option>
-             <option value="">XL</option>
-
-    </select>*/}
    </div>
   )
 } 

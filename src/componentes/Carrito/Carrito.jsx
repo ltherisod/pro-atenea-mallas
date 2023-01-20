@@ -3,15 +3,15 @@ import { useContext } from 'react';
 import { CarritoContext } from '../../context/CarritoContext';
 
 
-const Carrito = () => {
+const Carrito = (Datos) => {
    const {carrito} = useContext(CarritoContext);
+   console.log(carrito);
    
   return (
 
    
       <div>
-         <h1>{carrito.length}</h1>
-        
+      
       </div>
 );
 }
