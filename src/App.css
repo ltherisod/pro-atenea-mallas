@@ -178,3 +178,106 @@
   width: 4.7rem;
 }
 
+
+/*formulario de compras*/
+
+.formCompras{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cajaCompras{
+  border: 1px solid black;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  padding: 12rem;
+  margin: 9px;
+  border-radius: 7px;
+  background-color: aquamarine;
+}
+
+.tituloCompras{
+  font-style: italic;
+  text-align: center;
+}
+.cajaInputcompras{
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+
+.inputCompras{
+  width: 100%;
+  height:  40px;
+  border-radius: 7px;
+  text-align: center;
+  color: black;
+  font-style: italic;
+  background-color: bisque;
+}
+
+/*itemDetail*/
+.h1Titulo{
+  font-style: italic;
+  padding: 10px;
+  color: #373737cd;
+  margin-left: 3rem;
+}
+
+.cajaImgDetail{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3%;
+}
+
+.imgDetail{
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .h1Titulo{
+    margin-left: 4.5rem;
+  }
+  .cajaImgDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgDetail{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cajaDEtailgeneral{
+  width: 100%;
+  height: 100%;
+  }
+
+.contadorDetail{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  margin-right: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .contadorDetail{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
