@@ -14,7 +14,7 @@ const Carrito = () => {
 
   />)
   return (
-    <h1>carrito</h1>
+    <carritoItem/>
   )
 }
 
