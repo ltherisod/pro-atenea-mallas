@@ -265,15 +265,8 @@
   height: 100%;
   }
 
-.contadorDetail{
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%;
-  margin-right: 30%;
-}
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .contadorDetail{
       display: flex;
       justify-content: center;
@@ -281,3 +274,33 @@
     }
 }
 
+.divCarritoItem{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 2rem;
+}
+.imgCarritoItem{
+  width: 40%;
+  height: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .imgCarritoItem{
+    width: 80%;  }
+}
+.divCarritoItem2{
+  width: 50%;
+  height: 50%;
+  text-align: center;
+
+}
+@media screen and (max-width: 768px) {
+  .divCarritoItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+     width: 80%;
+  }
+}

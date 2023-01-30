@@ -17,12 +17,15 @@ const ItemDetail = ({Datos } ) => {
     <div className="cajaDEtailgeneral">
             <h1 className="h1Titulo">{Datos.titulo}</h1>
             <h2 className="h1Titulo">precio: $ {Datos.precio}</h2>
+      <div className="cajaContador">
+            <Contador agregadoAlCarrito = {agregadoAlCarrito} />
+      </div>
+            
+
             <div className="cajaImgDetail">
                   <img className="imgDetail" src={Datos.img} alt="{Datos.titulo}" />
             </div>
-          <div  className="contadorDetail">
-              <Contador agregadoAlCarrito = {agregadoAlCarrito} />
-          </div>
+         
     
     </div>
   )

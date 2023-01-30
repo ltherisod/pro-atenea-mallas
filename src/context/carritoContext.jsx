@@ -1,13 +1,11 @@
 import React,  { createContext, useState  } from 'react'
-import carritoItem from '../componentes/CarritoItem/carritoItem'
+import carritoItem from '../componentes/CarritoItem/CarritoItem'
 
 export const CarritoContext = createContext('')
 
 const CarritoProvider = ({children}) => {
 
   const [carrito, setCarrito] = useState([])
-
-  console.log(carrito);
 
  const enElCarro = (id) => carrito.find(Item => Item.id === id)
 
