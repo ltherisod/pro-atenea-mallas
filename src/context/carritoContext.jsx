@@ -7,7 +7,7 @@ const CarritoProvider = ({children}) => {
 
   const [carrito, setCarrito] = useState([])
 
- const enElCarro = (id) => carrito.find(Item => Item.id === Item.id)
+ const enElCarro = (id) => carrito.find(Item => Item.id === id)
 
  const agregado = (contador, Datos) =>{
   if(enElCarro (Datos.id)){
