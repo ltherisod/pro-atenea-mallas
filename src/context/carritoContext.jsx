@@ -1,4 +1,5 @@
 import React,  { createContext, useState  } from 'react'
+import carritoItem from '../componentes/CarritoItem/carritoItem'
 
 export const CarritoContext = createContext('')
 
@@ -6,7 +7,7 @@ const CarritoProvider = ({children}) => {
 
   const [carrito, setCarrito] = useState([])
 
- const enElCarro = (id) => carrito.find(Item => Item.id === id)
+ const enElCarro = (id) => carrito.find(Item => Item.id === Item.id)
 
  const agregado = (contador, Datos) =>{
   if(enElCarro (Datos.id)){
@@ -18,7 +19,8 @@ const CarritoProvider = ({children}) => {
   }
  }
 
- const vaciarCarro = () =>{
+ const vaciarCarro = (ItemId) =>{
+ // const removeItem = carrito.find((carritoItem) => carritoItem.Item.id === ItemId)
   setCarrito([])
  }
 
