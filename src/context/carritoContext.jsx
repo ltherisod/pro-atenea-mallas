@@ -11,15 +11,19 @@ const CarritoProvider = ({children}) => {
 
  const enElCarro = (id) => carrito.find(Item => Item.id === id)
 
- const agregado = (contador, Datos) =>{
-  if(enElCarro (Datos.id)){
-    setCarrito(carrito.map((product) => {
-      return product.id === Datos.id ? {...product, contador :product.contador + contador} : product
-    }))
-  }else{
-    setCarrito([...carrito, {Datos, contador}])
-  }
- }
+ const agregado = (contador, Datos) => {
+  if (enElCarro(Datos.id)) {
+      setCarrito(
+          carrito.map((product) => {
+              return product.id === Datos.id
+                  ? { ...product, contador: product.contador + contador }
+                  : product;
+          })
+      );
+  } else {
+      setCarrito([...carrito, { ...Datos, contador }]);   
+       }
+    };
 
  const vaciarCarro = (ItemId) =>{
  // const removeItem = carrito.find((carritoItem) => carritoItem.Item.id === ItemId)
