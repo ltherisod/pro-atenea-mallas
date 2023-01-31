@@ -222,6 +222,7 @@
 }
 
 /*itemDetail*/
+
 .h1Titulo{
   font-style: italic;
   padding: 10px;
@@ -273,6 +274,13 @@
       align-items: center;
     }
 }
+
+.cajaContador{
+  display: flex;
+  flex-direction: row;
+}
+
+/*CSS carritoItem*/
 
 .divCarritoItem{
   width: 100%;
