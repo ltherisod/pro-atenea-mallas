@@ -9,9 +9,6 @@ const CarritoItem = ({ id, titulo, precio, img }) => {
             <div className='card-body, divCarritoItem2'>
                 <h5>{titulo}</h5>
                 <p>Precio: ${precio}</p>
-                {/*<button className='btn btn-danger' onClick={() => borrarItem(id)}>
-          Eliminar Producto
-        </button>*/}
             </div>
         </div>
     );
