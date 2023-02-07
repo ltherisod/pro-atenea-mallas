@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {db} from '../firebase'
+import {db} from '../firebase/Index'
 import { collection,  getDocs } from 'firebase/firestore'
 
 const useFirebase = () => {
