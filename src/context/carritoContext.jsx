@@ -1,5 +1,4 @@
 import React,  { createContext, useState  } from 'react'
-import carritoItem from '../componentes/CarritoItem/CarritoItem'
 
 export const CarritoContext = createContext('')
 
@@ -20,7 +19,7 @@ const CarritoProvider = ({children}) => {
       );
   } else {
       setCarrito([...carrito, { ...Datos, contador }]);   
-       }
+       } 
     };
 
  const vaciarCarro = (ItemId) =>{
